@@ -1,43 +1,54 @@
 import React from 'react';
 import SC from '../common/styles/Container.module.scss';
 import s from './AllProjects.module.scss'
-import Project from "./project/Project";
-import Title from "../common/components/Title";
-// import cssLayout from '../common/img/css-layout.png'
-// import soko from '../common/img/sokoban.webp'
+import Project from './project/Project';
+import Title from '../common/components/Title';
+import flex from '../common/img/flex.jpg';
+import grid from '../common/img/grid.jpg';
+import smok from '../common/img/smok.jpg';
+import pizza from '../common/img/pizza.jpg';
+import todo from '../common/img/todo.jpg';
 
 const AllProjects = () => {
-    const description  =' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium, ' +
-        'alias animi cum cumque delectus earum error expedita facere facilis molestias necessitatibus non ' +
-        'odio porro quaerat qui reiciendis. Accusantium, perspiciatis.'
+    const todoDecr = 'Development TodoList with CRUD operations (React, Redux, TypeScript).'
+    const pizDecr = 'SPA for online shopping Pizza (React, Redux, TypeScript).'
+    const smokDecr = 'Web application (SPA) that helps the user quit smoking (OOP, MVC, AJAX, rest API, localStorage, Database).'
+    const flexDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Flex technologies)'
+    const gridDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Grid technologies).'
 
-    const JSGame = `Well known game 'Sokoban' was written using only vanilla JS.
-     It is a CRUD single page application using MVC pattern .
-     Animation is perfomed at canvas.
-     Database for users was created using Firebase. Feel free to try! `
 
-    const cssImage = {
-        backgroundImage: `url(${'cssLayout'})`
-    }
-    const jsGAme = {
-        backgroundImage: `url(${''})`
-    }
+    const flexImage = {
+        backgroundImage: `url(${flex})`
+    };
+    const gridImage = {
+        backgroundImage: `url(${grid})`
+    };
+    const smokImage = {
+        backgroundImage: `url(${smok})`
+    };
+    const pizzaImage = {
+        backgroundImage: `url(${pizza})`
+    };
+    const todoImage = {
+        backgroundImage: `url(${todo})`
+    };
+
     return (
-        <div className={s.allProjectsBlock} id = 'projects'>
+        <div className={s.allProjectsBlock} id="projects">
             <div className={`${SC.container} ${s.allProjectsContainer}`}>
+
                 <div className={s.projectTitle}>
-                    <Title title={'My projects'}/>
+                    <Title title={'My projects'} />
                 </div>
                 <div className={s.linksToProjects}>
-                    <Project style = {cssImage} title={'CSS-Layout'} description={description}/>
-                    <Project style = {jsGAme} title={'JS-game'} description={JSGame}/>
-                    <Project style = {cssImage} title={'Social Network'} description={description}/>
-                    <Project style = {cssImage} title={'Todolist'} description={description}/>
-                    <Project style = {cssImage} title={'Study Cards'} description={description}/>
+                    <Project style={todoImage} title={'Todolist'} description={todoDecr} />
+                    <Project style={pizzaImage} title={'Online Pizza'} description={pizDecr} />
+                    <Project style={smokImage} title={'No Smoking'} description={smokDecr} />
+                    <Project style={flexImage} title={'Creatives agency'} description={flexDecr} />
+                    <Project style={gridImage} title={'Shopping'} description={gridDecr} />
                 </div>
 
             </div>
-
         </div>
     );
 };
