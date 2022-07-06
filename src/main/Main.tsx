@@ -41,7 +41,7 @@ const Main = () => {
                     <p>I am front-end developer, based in Minsk, Belarus.</p>
                     <p>Scroll down to check on my skills and projects.</p>
                     <button className={s.CVBtn}>
-                        <a href="https://drive.google.com/file/d/129gGP05LKCd6RQ1KPJW7-zVumAU-TlHV/view?usp=sharing" target="_blank" >
+                        <a href="https://drive.google.com/file/d/1mD977Y3Er8u_9zgPc350KDWF6A1grWAA/view?usp=sharing" target="_blank" >
                             Download CV
                         </a>
                     </button>
