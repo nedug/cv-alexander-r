@@ -1,0 +1,6 @@
+@import '../styles/variables';
+.title{
+  font-family: $basicFont;
+  font-size: $titleFontSize + 5px;
+  color: $light-grey;
+}

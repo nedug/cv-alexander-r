@@ -1,0 +1,35 @@
+.allProjectsBlock {
+    padding-bottom: 20px;
+}
+
+.allProjectsContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.projectTitle {
+    width: 100%;
+    text-align: center;
+}
+
+.linksToProjects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+    .allProjectsBlock {
+        height: unset;
+    }
+
+    .allProjectsContainer {
+        padding-top: 10px;
+    }
+
+    .linksToProjects {
+        flex-direction: column;
+    }
+}

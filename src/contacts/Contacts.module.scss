@@ -1,0 +1,144 @@
+@import "src/common/styles/variables";
+
+.contactsBlock {
+  /*height: 100vh;*/
+  padding-bottom: 40px;
+  background-color: $bgc;
+
+}
+
+.myContacts {
+  @include basicText();
+  width: 260px;
+
+  fieldset {
+    padding-bottom: 40px;
+  }
+
+  h3 {
+    color: $black;
+    font-size: $basicFontSize + 4px;
+  }
+
+  a {
+    border-bottom: 2px solid #ed3200;
+    display: inline-block;
+    font-size: $basicFontSize;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+    padding-bottom: 8px;
+    text-decoration: none;
+    outline: 0;
+    color: $black;
+
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      padding-left: 8px;
+      padding-right: 8px;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.contactForm {
+  label {
+    display: block;
+    text-align: left;
+    color: #212121;
+    font-family: source sans pro, sans-serif;
+    font-size: 12px;
+    letter-spacing: .2em;
+    padding-bottom: 15px;
+  }
+
+  p {
+    color: $light-grey;
+  }
+}
+
+.contactForm input {
+  border: none;
+  outline: none;
+  padding: 0 0 15px;
+  margin-bottom: 40px;
+  width: 100%;
+  background: 0 0;
+  border-bottom: 2px solid #d1d1d1;
+  border-radius: 0;
+  font-family: source sans pro, sans-serif;
+  font-size: 16px;
+  color: #8a8a8a;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  /*-ms-transition: all .3s ease-in-out;*/
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid #ed3200;
+  }
+}
+
+.error {
+  color: $red;
+  font-size: $basicFontSize - 4px;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+.errorMessage {
+  color: $red;
+  font-size: $basicFontSize - 4px;
+  margin-top: -10px;
+}
+.messageOnSend{
+  color: $red;
+  font-size: $basicFontSize;
+  font-weight: $bold;
+  text-align: center;
+}
+
+.contactForm textarea {
+  min-height: 100px;
+  margin-bottom: 10px
+}
+
+.loader {
+  //width: 200px;
+  height: 3px;
+  position: relative;
+  overflow: hidden;
+  background-color: #d1d1d1;
+  //margin: 100px auto;
+  border-radius: 20px;
+  //margin-bottom: 40px;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  left: -50%;
+  height: 3px;
+  width: 40%;
+  background-color: $red;
+  animation: lineAnim 1s linear infinite;
+  border-radius: 20px;
+}
+
+@keyframes lineAnim {
+  0% {
+    left: -40%;
+  }
+  50% {
+    left: 20%;
+    width: 80%;
+  }
+  100% {
+    left: 100%;
+    width: 100%;
+  }
+}

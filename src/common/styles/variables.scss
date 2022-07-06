@@ -1,0 +1,16 @@
+$basicFont : 'Source Sans Pro', sans-serif;
+$basicWeight : 300;
+$basicFontSize : 16px;
+$titleFontSize: 26px;
+$bgc: #fff;
+$dark-grey: #777777;
+$black:#212121;
+$light-grey:#8a8a8a;
+$bold: 600;
+$red:#ed3200;
+
+@mixin basicText  {
+ font-size:  $basicFontSize ;
+  color: $light-grey;
+
+}

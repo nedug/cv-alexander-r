@@ -1,0 +1,84 @@
+@import "../common/styles/variables";
+
+.nav {
+  width: 300px;
+  //border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 5px 5px 5px -60%;
+  transform: translateY(-150%);
+  animation: ani 1s forwards;
+
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-top: 15px;
+      margin-bottom: 10px;
+
+      a {
+        //color: $black;
+        font-family: $basicFont;
+        font-size: $basicFontSize;
+        position: relative;
+        //font-size: 11px;
+        letter-spacing: 0.2em;
+        text-decoration: none;
+        color: #8a8a8a;
+        padding-left: 40px;
+        transition: all 0.3s ease-in-out;
+
+        &:after {
+          position: absolute;
+          top: 3px;
+          right: auto;
+          left: 0;
+          content: "\A";
+          width: 6px;
+          height: 6px;
+          background: #d1d1d1;
+          background: rgba(168, 168, 168, .3);
+          border: 2px solid transparent;
+          border-radius: 100px;
+          transition: all 0.3s ease-in-out;
+
+        }
+
+      }
+      &:hover{
+        a:after{
+          width: 8px;
+          height: 8px;
+          background: transparent;
+          border: 2px solid #ed3200;
+        }
+      }
+
+    }
+  }
+
+}
+@keyframes ani {
+  from {transform: translateY(-150%);}
+  to {transform: translateY(0);}
+}
+@keyframes aniClose {
+  from {transform: translateY(0);}
+  to {transform: translateY(-150%);}
+}
+
+@media (max-width: 700px){
+  .nav{
+    margin: 5px 5px 5px -20%;
+  }
+}
+@media (max-width: 500px){
+  .nav{
+    margin: 5px 5px 5px -30%;
+    width: 210px;
+  }
+}
