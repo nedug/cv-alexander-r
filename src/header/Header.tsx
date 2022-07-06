@@ -2,7 +2,6 @@ import React , {useState} from 'react';
 import s from './Header.module.scss'
 import SC from '../common/styles/Container.module.scss'
 import Nav from "../nav/Nav";
-//@ts-ignore
 import { CSSTransition } from "react-transition-group";
 
 const Header = () => {
