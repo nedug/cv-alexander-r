@@ -12,7 +12,7 @@ const Contacts = () => {
                 <div className={s.myContacts}>
                     <Title title={'My contacts'} />
                     <p>
-                        <a href="mailto: ekaterina.sunday@gmail.com" target="_blank">ru55nedug@gmail.com</a>
+                        <a href="mailto:ru55nedug@gmail.com" target="_blank">ru55nedug@gmail.com</a>
                     </p>
                     <p>
                         <a href="tel:+375336665502" target="_blank">+375 33 6665502</a>
