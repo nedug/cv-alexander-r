@@ -28,9 +28,9 @@ const AllProjects = () => {
     const flexCode = 'https://github.com/nedug/HTML_CSS/tree/master/FD1-155-21/Makets_flex';
     const smokDemo = 'https://nedug.github.io/JavaScript/FD2-98-21/project/spa_smoking/index.html';
     const smokCode = 'https://github.com/nedug/JavaScript/tree/master/FD2-98-21/project/spa_smoking';
-    const pizzaDemo = 'https://nedug.github.io/JavaScript/FD2-98-21/project/spa_smoking/index.html';
+    const pizzaDemo = 'https://nedug.github.io/Pizza-App-React/';
     const pizzaCode = 'https://github.com/nedug/Pizza-App-React';
-    const todoDemo = 'https://nedug.github.io/JavaScript/FD2-98-21/project/spa_smoking/index.html';
+    const todoDemo = 'https://nedug.github.io/IT-incubator/build/';
     const todoCode = 'https://github.com/nedug/IT-incubator';
 
     return (
@@ -41,8 +41,8 @@ const AllProjects = () => {
                     <Title title={'My projects'} />
                 </div>
                 <div className={s.linksToProjects}>
-                    <Project style={todoImage} title={'Todolist'} description={todoDecr} demo={gridDemo} code={todoCode} />
-                    <Project style={pizzaImage} title={'Online Pizza'} description={pizDecr} demo={gridDemo} code={pizzaCode}/>
+                    <Project style={todoImage} title={'Todolist'} description={todoDecr} demo={todoDemo} code={todoCode} />
+                    <Project style={pizzaImage} title={'Online Pizza'} description={pizDecr} demo={pizzaDemo} code={pizzaCode}/>
                     <Project style={smokImage} title={'No Smoking'} description={smokDecr} demo={smokDemo} code={smokCode}/>
                     <Project style={flexImage} title={'Creatives agency'} description={flexDecr} demo={flexDemo} code={flexCode}/>
                     <Project style={gridImage} title={'Shopping'} description={gridDecr} demo={gridDemo} code={gridCode}/>
