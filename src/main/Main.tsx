@@ -22,7 +22,7 @@ const Main = () => {
                     scaleMobile: 1.00,
                     color: 0x9fa4a4,
                     backgroundColor: 0xe6e6e6,
-                    points: 4.00,
+                    points: 5.00,
                     maxDistance: 16.00,
                     spacing: 20.00
                 })
