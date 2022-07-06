@@ -1,6 +1,6 @@
 {
-  "homepage": "https://katesunday.github.io/cv-ekaterina-kopylova/",
-  "name": "cv-ekaterina-kopylova",
+  "homepage": "https://nedug.github.io/cv-alexander-r/",
+  "name": "cv-alexander-r",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -60,6 +60,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^4.0.0"
   }
 }
