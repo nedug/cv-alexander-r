@@ -36,7 +36,7 @@
 
 .softSkills {
   display: flex;
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
@@ -46,8 +46,8 @@
     font-family: $basicFont;
     font-size: 22px;
     color: $light-grey;
-    margin: 3px 0;
-    padding: 0 5px;
+    margin: 3px 15px;
+    //margin: 0 20px;
   }
 }
 
