@@ -17,7 +17,7 @@ const AllSkills = () => {
                 </div>
                 <div className={s.skills}>
                     <div>HTML</div>
-                    <div>CSS + SASS</div>
+                    <div>CSS + SСSS</div>
                     <div>JavaScript + TypeScript</div>
                     <div>React + REDUX + REDUX Toolkit</div>
                     <div>NODE.js (npm+yarn+npx)</div>
