@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import s from './Main.module.scss';
 import SC from '../common/styles/Container.module.scss';
 // @ts-ignore (no type declarations for vantajs)
@@ -32,22 +33,38 @@ const Main = () => {
             if (vantaEffect) vantaEffect.destroy()
         }
     }, [vantaEffect])
+
+    const animation = {
+        hidden: {
+            // x: -100,
+            opacity: 0,
+        },
+        visible: {
+            // x: 0,
+            opacity: 1,
+            transition: { delay: 0.4 }
+        },
+    };
+
     return (
-        <div className={s.mainDiv} ref={vantaRef} id="main">
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            className={s.mainDiv} ref={vantaRef} id="main">
             <div className={SC.container}>
                 <div className={s.description}>
                     <p>Hello everyone!</p>
                     <p>My name is <b>Alexander Rusin</b>.</p>
                     <p>I am front-end developer, based in Minsk, Belarus.</p>
                     <p>Scroll down to check on my skills and projects.</p>
-                    <button className={s.CVBtn}>
+                    <motion.button variants={animation} className={s.CVBtn}>
                         <a href="https://drive.google.com/file/d/1mD977Y3Er8u_9zgPc350KDWF6A1grWAA/view?usp=sharing" target="_blank" >
                             Download CV
                         </a>
-                    </button>
+                    </motion.button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

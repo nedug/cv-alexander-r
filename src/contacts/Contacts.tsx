@@ -1,15 +1,31 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import s from './Contacts.module.scss'
 import SC from '../common/styles/Container.module.scss';
 import Title from '../common/components/Title';
 
 
 const Contacts = () => {
+    const animation = {
+        hidden: {
+            y: 50,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            y: 0,
+            opacity: 1,
+            transition: { delay: custom * 0.2 },
+        }),
+    };
 
     return (
         <div className={s.contactsBlock} id="contacts">
             <div className={SC.container}>
-                <div className={s.myContacts}>
+                <motion.div initial="hidden"
+                            whileInView="visible"
+                            viewport={{ amount: 0.1 }}
+                            custom={1} variants={animation}
+                            className={s.myContacts}>
                     <Title title={'My contacts'} />
                     <p>
                         <a href="mailto:ru55nedug@gmail.com" target="_blank">ru55nedug@gmail.com</a>
@@ -26,7 +42,7 @@ const Contacts = () => {
                     <p>
                         <a href="https://t.me/polkaj" target="_blank">Telegram</a>
                     </p>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

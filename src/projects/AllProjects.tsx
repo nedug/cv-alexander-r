@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import SC from '../common/styles/Container.module.scss';
 import s from './AllProjects.module.scss'
 import Project from './project/Project';
@@ -33,19 +34,40 @@ const AllProjects = () => {
     const todoDemo = 'https://nedug.github.io/IT-incubator/build/';
     const todoCode = 'https://github.com/nedug/IT-incubator';
 
+    const animation = {
+        hidden: {
+            x: -100,
+            opacity: 0,
+        },
+        visible: (custom: number) => ({
+            x: 0,
+            opacity: 1,
+            transition: { delay: custom * 0.2 }
+        }),
+    };
+
     return (
         <div className={s.allProjectsBlock} id="projects">
             <div className={`${SC.container} ${s.allProjectsContainer}`}>
 
-                <div className={s.projectTitle}>
+                <motion.div initial="hidden"
+                            whileInView="visible"
+                            viewport={{ amount: 0.1, once: true }}
+                            custom={1} variants={animation}
+                            className={s.projectTitle}>
                     <Title title={'My projects'} />
-                </div>
+                </motion.div>
                 <div className={s.linksToProjects}>
-                    <Project style={todoImage} title={'Todolist'} description={todoDecr} demo={todoDemo} code={todoCode} />
-                    <Project style={pizzaImage} title={'Online Pizza'} description={pizDecr} demo={pizzaDemo} code={pizzaCode}/>
-                    <Project style={smokImage} title={'No Smoking'} description={smokDecr} demo={smokDemo} code={smokCode}/>
-                    <Project style={flexImage} title={'Creatives agency'} description={flexDecr} demo={flexDemo} code={flexCode}/>
-                    <Project style={gridImage} title={'Shopping'} description={gridDecr} demo={gridDemo} code={gridCode}/>
+                    <Project style={todoImage} title={'Todolist'} description={todoDecr} demo={todoDemo}
+                             code={todoCode} />
+                    <Project style={pizzaImage} title={'Online Pizza'} description={pizDecr} demo={pizzaDemo}
+                             code={pizzaCode} />
+                    <Project style={smokImage} title={'No Smoking'} description={smokDecr} demo={smokDemo}
+                             code={smokCode} />
+                    <Project style={flexImage} title={'Creatives agency'} description={flexDecr} demo={flexDemo}
+                             code={flexCode} />
+                    <Project style={gridImage} title={'Shopping'} description={gridDecr} demo={gridDemo}
+                             code={gridCode} />
                 </div>
 
             </div>
