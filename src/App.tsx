@@ -5,6 +5,9 @@ import Contacts from './contacts/Contacts';
 import AllProjects from './projects/AllProjects';
 
 export const App = () => (
+
+    // OverlayScrollbars();
+
     <div className="App">
         {/*<Header />*/}
         <Main />
