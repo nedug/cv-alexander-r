@@ -2,14 +2,14 @@
 
 .contactsBlock {
   /*height: 100vh;*/
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   background-color: $bgc;
 
 }
 
 .myContacts {
   @include basicText();
-  //width: 260px;
+  width: 190px;
 
   fieldset {
     padding-bottom: 40px;
@@ -79,7 +79,7 @@
   cursor: pointer;
 
   &:hover {
-    border-bottom: 2px solid #ed3200;
+    //border-bottom: 2px solid #ed3200;
   }
 }
 

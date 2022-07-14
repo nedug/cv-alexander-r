@@ -61,9 +61,9 @@ const AllSkills = () => {
                     <motion.div custom={2} variants={animationSkills}>CSS + SСSS</motion.div>
                     <motion.div custom={3} variants={animationSkills}>JavaScript + TypeScript</motion.div>
                     <motion.div custom={4} variants={animationSkills}>React + REDUX + REDUX Toolkit</motion.div>
-                    <motion.div custom={5} variants={animationSkills}>NODE.js (npm+yarn+npx)</motion.div>
+                    <motion.div custom={5} variants={animationSkills}>NODE.js (npm+yarn+npx) + JSON Server</motion.div>
                     <motion.div custom={6} variants={animationSkills}>GIT + GITHUB</motion.div>
-                    <motion.div custom={7} variants={animationSkills}>AXIOS, REST API, POSTMAN</motion.div>
+                    <motion.div custom={7} variants={animationSkills}>AXIOS + REST API + POSTMAN</motion.div>
                     <motion.div custom={8} variants={animationSkills}>OOP + MVC</motion.div>
                     <motion.div custom={9} variants={animationSkills}>UNIT TEST (TDD + Jest) + STORYBOOK</motion.div>
                     <motion.div custom={10} variants={animationSkills}>ESLint + Module CSS + Styled-components
