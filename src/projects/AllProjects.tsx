@@ -11,11 +11,11 @@ import pizza from '../common/img/pizza.jpg';
 import todo from '../common/img/todo.jpg';
 
 const AllProjects = () => {
-    const todoDecr = 'Development TodoList with CRUD operations (React, Redux, TypeScript).'
-    const pizDecr = 'SPA for online shopping Pizza (React, Redux, TypeScript).'
-    const smokDecr = 'Web application (SPA) that helps the user quit smoking (OOP, MVC, AJAX, rest API, localStorage, Database).'
+    const todoDecr = 'Development TodoList with CRUD operations (React, Redux, TypeScript)'
+    const pizDecr = 'SPA for online shopping Pizza (React, Redux, TypeScript)'
+    const smokDecr = 'Web application (SPA) that helps the user quit smoking (OOP, MVC, AJAX, rest API, localStorage, Database)'
     const flexDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Flex technologies)'
-    const gridDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Grid technologies).'
+    const gridDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Grid technologies)'
 
     const flexImage = { backgroundImage: `url(${flex})` };
     const gridImage = { backgroundImage: `url(${grid})` };
