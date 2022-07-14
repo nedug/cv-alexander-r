@@ -31,7 +31,7 @@ const AllProjects = () => {
     const smokCode = 'https://github.com/nedug/JavaScript/tree/master/FD2-98-21/project/spa_smoking';
     const pizzaDemo = 'https://nedug.github.io/Pizza-App-React/';
     const pizzaCode = 'https://github.com/nedug/Pizza-App-React';
-    const todoDemo = 'https://nedug.github.io/IT-incubator/build/';
+    const todoDemo = 'https://nedug.github.io/IT-incubator';
     const todoCode = 'https://github.com/nedug/IT-incubator';
 
     const animation = {
