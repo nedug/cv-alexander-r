@@ -67,7 +67,13 @@ const Main = () => {
                     <p>My name is <b>Alexander Rusin</b>.</p>
                     <p>I'm front-end developer based in Minsk, Belarus.</p>
                     <p onClick={clickScroll} className={s.scrollText}>-- scroll down to check out my skills and projects --</p>
-                    <motion.button variants={animation} className={s.CVBtn}>
+
+                    <motion.button
+                        animate={{border: '1px solid #ff2323'}}
+                        transition={{delay: 5, repeat: Infinity, duration: .5, repeatDelay: 1.5, repeatType: 'reverse'}}
+                        variants={animation}
+                        className={s.CVBtn}
+                    >
                         <a href="https://drive.google.com/file/d/1mD977Y3Er8u_9zgPc350KDWF6A1grWAA/view?usp=sharing" target="_blank" >
                             Download CV
                         </a>
