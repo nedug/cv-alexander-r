@@ -34,7 +34,7 @@ const Contacts = () => {
                         <a href="tel:+375336665502" target="_blank">+375 33 6665502</a>
                     </p>
                     <p>
-                        <a href="https://www.linkedin.com/in/alexander-rusin-789760226" target="_blank">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/alexander-rusin-789760226" target="_blank">LinkedIn</a>
                     </p>
                     <p>
                         <a href="https://github.com/nedug" target="_blank">Github</a>

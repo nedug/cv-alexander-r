@@ -73,14 +73,14 @@ const AllSkills = () => {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ amount: 0.1, once: true }}
+                    viewport={{ amount: 0.1, once: true, }}
                     custom={1} variants={animation}
                     className={s.skillsHeader}>
                     <Title title={'My soft skills'} />
                 </motion.div>
                 <motion.ul initial="hidden"
                            whileInView="visible"
-                           viewport={{ amount: 0.5, once: true }}
+                           viewport={{ amount: 0.5, once: true, }}
                            className={s.softSkills}>
                     <motion.li custom={1} variants={animationSkills2}>Hardworking</motion.li>
                     <motion.li custom={2} variants={animationSkills2}>Willingness to learn</motion.li>
