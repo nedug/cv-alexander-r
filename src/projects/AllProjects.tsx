@@ -9,6 +9,7 @@ import grid from '../common/img/grid.jpg';
 import smok from '../common/img/smok.jpg';
 import pizza from '../common/img/pizza.jpg';
 import todo from '../common/img/todo.jpg';
+import git from '../common/img/github.jpg';
 
 const AllProjects = () => {
     const todoDecr = 'Development TodoList with CRUD operations (React, Redux, TypeScript)'
@@ -16,12 +17,14 @@ const AllProjects = () => {
     const smokDecr = 'Web application (SPA) that helps the user quit smoking (OOP, MVC, AJAX, rest API, localStorage, Database)'
     const flexDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Flex technologies)'
     const gridDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Grid technologies)'
+    const gitDecr = 'Searching repos on Github (React, Redux Toolkit Query, TypeScript, Tailwind)'
 
     const flexImage = { backgroundImage: `url(${flex})` };
     const gridImage = { backgroundImage: `url(${grid})` };
     const smokImage = { backgroundImage: `url(${smok})` };
     const pizzaImage = { backgroundImage: `url(${pizza})` };
     const todoImage = { backgroundImage: `url(${todo})` };
+    const gitImage = { backgroundImage: `url(${git})` };
 
     const gridDemo = 'https://nedug.github.io/HTML_CSS/FD1-155-21/Makets_flex/grid.html';
     const gridCode = 'https://github.com/nedug/HTML_CSS/tree/master/FD1-155-21/Makets_flex';
@@ -33,6 +36,8 @@ const AllProjects = () => {
     const pizzaCode = 'https://github.com/nedug/Pizza-App-React';
     const todoDemo = 'https://nedug.github.io/IT-incubator';
     const todoCode = 'https://github.com/nedug/IT-incubator';
+    const gitDemo = 'https://nedug.github.io/GitHub-Search/';
+    const gitCode = 'https://github.com/nedug/GitHub-Search';
 
     const animation = {
         hidden: {
@@ -62,6 +67,8 @@ const AllProjects = () => {
                              code={todoCode} />
                     <Project style={pizzaImage} title={'Online Pizza'} description={pizDecr} demo={pizzaDemo}
                              code={pizzaCode} />
+                    <Project style={gitImage} title={'Search GitHub'} description={gitDecr} demo={gitDemo}
+                             code={gitCode} />
                     <Project style={smokImage} title={'No Smoking'} description={smokDecr} demo={smokDemo}
                              code={smokCode} />
                     <Project style={flexImage} title={'Creatives agency'} description={flexDecr} demo={flexDemo}
