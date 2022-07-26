@@ -12,12 +12,12 @@ import todo from '../common/img/todo.jpg';
 import git from '../common/img/github.jpg';
 
 const AllProjects = () => {
-    const todoDecr = 'Development TodoList with CRUD operations (React, Redux, TypeScript)'
-    const pizDecr = 'SPA for online shopping Pizza (React, Redux, TypeScript)'
-    const smokDecr = 'Web application (SPA) that helps the user quit smoking (OOP, MVC, AJAX, rest API, localStorage, Database)'
-    const flexDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Flex technologies)'
-    const gridDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (based on Grid technologies)'
-    const gitDecr = 'Searching repos on Github (React, Redux Toolkit Query, TypeScript, Tailwind)'
+    const todoDecr = 'Development TodoList with CRUD operations (React, Redux + Redux Toolkit, TypeScript, Material UI)'
+    const pizDecr = 'SPA for online shopping Pizza (React, Redux Toolkit, TypeScript, Debounce, SСSS, localStorage)'
+    const smokDecr = 'Web application (SPA) that helps the user quit smoking (JS, OOP, MVC, AJAX, rest API, localStorage, Database)'
+    const flexDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (Flex technologies)'
+    const gridDecr = 'Web site based on layouts, using HTML, CSS and JavaScript (Grid technologies)'
+    const gitDecr = 'Searching repos on Github (React, Redux Toolkit Query, TypeScript, Tailwind, Debounce, localStorage)'
 
     const flexImage = { backgroundImage: `url(${flex})` };
     const gridImage = { backgroundImage: `url(${grid})` };
