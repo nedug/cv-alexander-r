@@ -1,4 +1,4 @@
-## My React Portfolio and CV
+# My React Portfolio and CV
 
 ***
 
