@@ -11,4 +11,14 @@ Here you can find basic information about me:
 
 ***
 
+```
+Technologies and libraries in development:
+- React
+- TypeScript
+- framer-motion + overlayscrollbars + vanta
+- SCSS
+```
+
+***
+
 [Demo version on Github Pages](https://nedug.github.io/cv-alexander-r/)
