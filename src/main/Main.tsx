@@ -70,7 +70,7 @@ const Main = () => {
 
                     <motion.button
                         animate={{border: '1px solid #ff2323'}}
-                        transition={{delay: 5, repeat: Infinity, duration: .5, repeatDelay: 1.5, repeatType: 'reverse'}}
+                        transition={{delay: 5, repeat: Infinity, duration: .5, repeatDelay: 1, repeatType: 'reverse'}}
                         variants={animation}
                         className={s.CVBtn}
                     >
