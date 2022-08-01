@@ -106,7 +106,7 @@ const AllSkills = () => {
                     </motion.div>
 
                     <motion.div custom={5} variants={animationSkills}>
-                        NODE.js (npm, yarn, npx) + JSON Server
+                        NODE.js (npm, yarn, npx) + Express + JSON Server
                         <span style={{ marginLeft: 13, verticalAlign: 'middle' }}>
                             <svg width="33px" height="33px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                                 <path
@@ -116,7 +116,7 @@ const AllSkills = () => {
                     </motion.div>
 
                     <motion.div custom={6} variants={animationSkills}>
-                        GIT + GITHUB
+                        GIT + GitHub
                         <span style={{ marginLeft: 13, verticalAlign: 'middle' }}>
                             <svg width="33px" height="33px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                                 <path
@@ -125,7 +125,7 @@ const AllSkills = () => {
                         </span>
                     </motion.div>
                     <motion.div custom={7} variants={animationSkills}>
-                        AXIOS + REST API + POSTMAN
+                        Axios + REST API + Postman
                         <span style={{ marginLeft: 13, verticalAlign: 'middle' }}>
                             <img src={api} alt="logo" width="33" height="33" />
                         </span>
@@ -137,7 +137,7 @@ const AllSkills = () => {
                         </span>
                     </motion.div>
                     <motion.div custom={8.7} variants={animationSkills}>
-                        UNIT TEST (TDD, Jest) + STORYBOOK
+                        UNIT TEST (TDD, Jest) + StoryBook
                         <span style={{ marginLeft: 13, verticalAlign: 'middle' }}>
                             <img src={jest} alt="logo" width="30" height="30" />
                         </span>
